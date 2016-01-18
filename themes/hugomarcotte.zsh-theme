@@ -26,13 +26,13 @@ function rbenv_prompt_info() {
 [[ $UID -eq 0 ]] && NCOLOR="red" || NCOLOR="white"
 
 PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c%b%{$reset_color%} $(git_prompt_info_with_sha)%(!.#.$) '
-RPROMPT='%{$fg[blue]%}%B(%{$fg[yellow]%}%B$(rbenv_prompt_info)%{$fg[blue]%})%{$reset_color%} [%*]'
+RPROMPT='%{$fg[green]%}%B(%{$fg[green]%}%B$(rbenv_prompt_info)%{$fg[green]%})%{$reset_color%} [%*]'
 
 # git theming
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg_no_bold[yellow]%}%B"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg_bold[blue]%})%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[green]%}(%{$fg_no_bold[green]%}%B"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg_bold[green]%})%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%}✗"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%} ✗"
 
 # LS colors, made with http://geoff.greer.fm/lscolors/
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
