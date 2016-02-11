@@ -26,7 +26,7 @@ function rbenv_prompt_info() {
 [[ $UID -eq 0 ]] && NCOLOR="red" || NCOLOR="white"
 
 PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c%b%{$reset_color%} $(git_prompt_info_with_sha)%(!.#.$) '
-RPROMPT='%{$fg[green]%}%B(%{$fg[green]%}%B$(rbenv_prompt_info)%{$fg[green]%})%{$reset_color%} [%*]'
+RPROMPT='%{$fg[yellow]%}%B(%{$fg[yellow]%}%B$(rbenv_prompt_info)%{$fg[yellow]%})'
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[green]%}(%{$fg_no_bold[green]%}%B"
